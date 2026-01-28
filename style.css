@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f8;
+}
+
+.navbar {
+   background-color: #ffe4e1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar select,
+.navbar button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+.view-btn {
+    background-color: #ffa94d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: #ff922b;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #ffe4e1;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    height: 60px;
+    overflow: hidden;
+    color: #555;
+}
+
+.card .btn {
+    background-color: #ffa94d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card .btn:hover {
+    background-color: #ff922b;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navbar select,
+    .navbar button {
+        width: 100%;
+    }
+
+    .card-img-top {
+        height: 180px;
+        background-color: #f1f3f5;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-text {
+        height: auto;
+    }
+}
