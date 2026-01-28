@@ -57,7 +57,7 @@ function showProducts(products) {
                     <p class="card-text">${product.description}</p>
                     <p class="fw-bold">$${product.price}</p>
                     <button class="btn" onclick="Swal.fire({title: 'Added to cart successfully!', icon: 'success'})">
-                        Add to Cart 🛒
+                        Add to Cart 
                     </button>
                 </div>
             </div>
